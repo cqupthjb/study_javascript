@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标点击事件</title>
+    <style>
+        .demo {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: white;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo" onmousedown="mDown(this)" onmouseup="mUp(this)">
+        点击鼠标
+    </div>
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor = "yellow";
+            obj.style.color = "black";
+            obj.innerHTML = '松开鼠标';
+        }
+
+        function mUp(obj) {
+            obj.style.backgroundColor = "red";
+            obj.innerHTML = '感谢您的配合';
+        }
+    </script>
+</body>
+</html>
