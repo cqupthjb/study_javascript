@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标事件处理</title>
+    <style>
+        .demo {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            color: white;
+            line-height: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="demo">
+        请把鼠标移上来
+    </div>
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = '感谢您的配合!';
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = '请把鼠标移上来';
+        }
+    </script>
+</body>
+</html>

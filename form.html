@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js验证form表单提交</title>
+</head>
+<body>
+    <p>请输入有效数字（0-10）：</p>
+    <input  id="num" type="text">
+    <button onclick="myFunction()">验证</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x, text;
+            x = document.getElementById('num').value;
+            if(x >= 0 && x <= 10) {
+                text = "输入有效";
+            }else {
+                text = "输入无效";
+            }
+            document.getElementById('demo').innerHTML = text;
+        }
+    </script>
+</body>
+</html>

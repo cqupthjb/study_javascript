@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagination</title>
+    <style type="text/css">
+    ul.Pagination1 {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+    ul.Pagination1 li{
+        display: inline-block;
+    }
+    ul.Pagination1 li a {
+        color: rgb(7, 3, 10);
+        text-decoration: none;
+        float: left;
+        padding: 5px 10px;
+    }
+
+    ul.Pagination2 {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    ul.Pagination2 li {
+        display: inline;
+    }
+    ul.Pagination2 li a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    ul.Pagination2 li a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    ul.Pagination2 li a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    ul.Pagination3 {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    ul.Pagination3 li {
+        display: inline;
+    }
+    ul.Pagination3 li a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    ul.Pagination3 li a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    ul.Pagination3 li a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    ul.Pagination4 {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    ul.Pagination4 li {
+        display: inline;
+    }
+    ul.Pagination4 li a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 2s;
+    }
+    ul.Pagination4 li a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    ul.Pagination4 li a:hover:not(.active) {
+        background-color: #ddd;
+    }
+    </style>
+</head>
+<body>
+    <h2>简单的分页</h2>
+    <ul class="Pagination1">
+        <li><a href="#"><</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">></a></li>
+    </ul>
+    <hr>
+    <h2>点击及鼠标悬停分页样式</h2>
+    <ul class="Pagination2">
+        <li><a href="#"><</a></li>
+        <li><a href="#">1</a></li>
+        <li><a class="active" href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">></a></li>
+    </ul>
+    <hr>
+    <h2>圆角的方式</h2>
+    <ul class="Pagination3">
+        <li><a href="#"><</a></li>
+        <li><a href="#">1</a></li>
+        <li><a class="active" href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">></a></li>
+    </ul>
+    <hr>
+    <h2>鼠标悬停过渡的方式</h2>
+    <ul class="Pagination4">
+        <li><a href="#"><</a></li>
+        <li><a href="#">1</a></li>
+        <li><a class="active" href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">></a></li>
+    </ul>
+    <hr>
+    <meter value="2" min="0" max="10">1-100</meter>
+    <hr>
+    <progress value="22" max="100"></progress>
+    <progress></progress>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原型的练习</title>
+</head>
+
+<body>
+    <h1>看看测试效果</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script type="text/javascript">
+        
+        function Person(name, age, job) {
+            this.name = name;
+            this.age = age;
+            this.job = job;
+            this.birth = function () {
+                return day.getFullYear() - this.age;
+            };
+            this.changeName = function (name) {
+                this.name = name;
+            }
+        }
+        Person.prototype.money = 1500;
+        var hjb = new Person('黄建波', 22, 'stu');
+        hjb.habit = 'travel around the world';
+        var zy = new Person('张屹', 21, 'stu');
+        zy.changeName('yy');
+        document.getElementById("demo1").innerHTML = 'hjb\'s information : ' + hjb.birth() + '<br>';
+        document.getElementById('demo2').innerHTML = zy.name;
+    </script>
+</body>
+
+</html>

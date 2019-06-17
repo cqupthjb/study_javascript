@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript 对象构造器</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        // Person 对象的构造器函数
+        function Person(firstName, lastName, age, eyeColor) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.eyeColor = eyeColor;
+            this.changeName = function (name) {
+                this.lastName = name;
+            }
+        }
+        // 创建 Person 对象
+        var myFriend = new Person("Bill", "Gates", 62, "green");
+
+        // 修改姓氏
+        myFriend.changeName("Jobs");
+
+        // 显示姓氏
+        document.getElementById("demo").innerHTML =
+            "My friend's last name is " + myFriend.lastName;
+    </script>
+
+</body>
+
+</html>
