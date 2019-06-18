@@ -7,6 +7,16 @@
     <title>测试json</title>
 </head>
 <body>
-    
+    <p id="demo"></p>
+    <script>
+        var obj = JSON.parse('{ "name":"Bill Gates", "age":62, "city":"Seattle"}');
+        var arr = JSON.parse('["hjb", "zy"]');
+        // for(x in obj) {
+        //     alert(obj[x]);
+        // }
+        for(i in arr) {
+            alert(arr[i]);
+        }
+    </script>
 </body>
 </html>
