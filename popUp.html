@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹出框</title>
+</head>
+
+<body>
+    <h1>确认框</h1>
+    <button onclick="myFunction(flag = 1)">点击试一试确认框</button>
+    <h1>提示框</h1>
+    <button onclick="myFunction(flag = 0)">点击试一试提示框</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(flag) {
+            var txt;
+            if (flag == 1) {
+                var flag = confirm("发起投票：是否赞成（确认/取消）")
+                if (flag) {
+                    txt = '你选择了赞成';
+                } else {
+                    txt = '你选择了取消';
+                }
+                document.getElementById('demo').innerHTML = txt;
+            }else {
+                //当用户取消输入，则返回NULL
+                var name = prompt('请输入你的名字：', '黄建波');
+                if(name == null || name == ""){
+                    txt = "用户输入取消";
+                }else {
+                    txt = '嗨！' + name + '，今天开心吗？';
+                }
+                document.getElementById('demo').innerHTML = txt;
+            }
+        }
+    </script>
+</body>
+
+</html>

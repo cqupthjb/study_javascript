@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript HTML DOM</h1>
+
+    <p>Hello World!</p>
+
+    <p>Hello China!</p>
+
+    <p>单击按钮可更改所有 p 元素的颜色。</p>
+
+    <button onclick="myFunction()">试一试</button>
+
+    <script>
+        var arr = ['red', 'yellow', 'blue', 'black'];
+        function myFunction() {
+            var myCollection = document.getElementsByTagName("p");
+            var i, rand;
+            var max = 3, min = 0;
+            for (i = 0; i < myCollection.length; i++) {
+                rand = Math.floor(Math.random() * (max - min)) + min;
+                myCollection[i].style.color = arr[rand];
+            }
+        }
+    </script>
+
+</body>
+
+</html>

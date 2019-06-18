@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>获取文本节点值的三种方式</title>
+</head>
+
+<body>
+    <h1 id="demo1">这是一个网页</h1>
+    <p id="demo2"></p>
+    <!-- 方式一 -->
+    <!-- <script>
+        document.getElementById('demo2').innerHTML = document.getElementById('demo1').innerHTML;
+    </script> -->
+    <!-- 方式二 -->
+    <!-- <script>
+        document.getElementById('demo2').innerHTML = document.getElementById('demo1').firstChild.nodeValue  ;
+    </script> -->
+    <!-- 方式三 -->
+    <script>
+        document.getElementById('demo2').innerHTML = document.getElementById('demo1').nodeName;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timing</title>
+</head>
+<body>
+    <!-- setTimeout -->
+    <button onclick="myclick = setTimeout(myFunction, 3000)">试一下</button>
+    <button onclick="clearTimeout(myclick)">关闭</button>
+    <p>现在时间是：</p>
+    <p id="demo"></p>
+    <button onclick="clearInterval(myClock)">时间停止</button>
+    <script>
+        var myClock = setInterval(myTimer, 1000);
+        function myFunction() {
+            alert('3s时间到');
+        }
+        function myTimer() {
+            var d = new Date();
+            document.getElementById('demo').innerHTML = d.toLocaleString();
+        }
+    </script>
+</body>
+</html>

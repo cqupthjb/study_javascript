@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>addEventListener</title>
+</head>
+<body>
+    <button id="myBtn1">试一试</button><hr>
+    <button id="myBtn2">试二试</button><hr>
+    <button id="myBtn3">试三试</button><hr>
+    <div id="text" style="width: 100px; height: 50px; background-color: yellow">试四试</div>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('myBtn1').addEventListener('click', displayDate);
+        document.getElementById('myBtn2').addEventListener('click', function() {
+            alert('Hello world!');
+        });
+        document.getElementById('myBtn3').addEventListener('click', myFunction_1);
+        document.getElementById('myBtn3').addEventListener('click', myFunction_2);
+        document.getElementById('text').addEventListener('mouseover', function(){
+            myFunction_3(this);
+        });
+        document.getElementById('text').addEventListener('mouseout', function() {
+            myFunction_4(this);
+        });
+        function displayDate() {
+            document.getElementById('demo').innerHTML = Date();
+        }
+        function myFunction_1() {
+            alert('这是我的第一个函数');
+        }
+        function myFunction_2() {
+            alert('这是我的第二个函数');
+        }
+        function myFunction_3(obj) {
+            obj.style.backgroundColor = 'black';
+        }
+        function myFunction_4(obj) {
+            obj.style.backgroundColor = 'yellow';
+        }
+    </script>
+</body>
+</html>

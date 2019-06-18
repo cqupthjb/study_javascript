@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>onfocus时间</title>
+    <style>
+        input {
+            text-decoration: none;
+            border: 1px solid #f10215;
+        }
+    </style>
+    <script>
+        function myFunction(obj) {
+            obj.style.backgroundColor = 'skyblue';
+            obj.value = obj.value.toUpperCase(); 
+        }
+    </script>
+</head>
+<body>
+    请输入你的姓名：<input type="text" onfocus="myFunction(this)" placeholder="hjb">
+</body>
+</html>
