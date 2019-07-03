@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习JQuery</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("p").click(function() {
+                $(this).css("background-color", "red");
+            });
+            $("p").dblclick(function() {
+                $(this).css("background-color", "#FFFFFF");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="p1">这是第一段</p>
+    <p id="p2">这是第二段</p>
+    <p>这是第三段</p>
+    <button>点击试试</button>
+</body>
+
+</html>
