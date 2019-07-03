@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery动画效果展示</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("button").click(function (){
+                $("div").animate({
+                    left: "250px",
+                    // height: "150px",
+                    // width: "150px",
+                    borderRadius: "50px"
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>开始动画</button>
+    <div style="position: relative; width: 100px; height: 100px; background-color: red;"></div>
+</body>
+</html>
